@@ -1,5 +1,5 @@
 <template>
-  <div class="background-graphs">
+  <div class="background-graphs" ref="homeSection">
     <div class="container flex h-4/5 items-center">
       <div class="grid-cols-2">
         <div class="flex items-center text-xs uppercase text-water gap-2 mb-4 tracking-wide">

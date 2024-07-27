@@ -3,10 +3,8 @@
     <md-logo ></md-logo>
     <div class="items">
       <span class="home-style item">
-        <p class="item">
-          <router-link to="/">
+        <p class="item" @click="RedirectTo('homeSection')">
             início
-          </router-link>
         </p>
       </span>
       <p class="item">
@@ -34,6 +32,12 @@ export default {
     MdLogo,
     TranslateIcon,
   },
+
+  methods: {
+    RedirectTo(ref) {
+      this.$emit('redirectToSection', ref)
+    }
+  }
 };
 </script>
 <style scoped postcss>
