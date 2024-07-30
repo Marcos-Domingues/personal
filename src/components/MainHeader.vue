@@ -7,10 +7,8 @@
             início
         </p>
       </span>
-      <p class="item">
-        <router-link to="/projects">
+      <p class="item" @click="RedirectTo('projectsSection')">
           projetos
-        </router-link>
       </p>
       <p class="item">
           sobre
@@ -35,9 +33,9 @@ export default {
 
   methods: {
     RedirectTo(ref) {
-      this.$emit('redirectToSection', ref)
-    }
-  }
+      this.$emit("redirectToSection", ref);
+    },
+  },
 };
 </script>
 <style scoped postcss>
