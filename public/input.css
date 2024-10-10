@@ -13,3 +13,11 @@ html {
   background-color: #0E111A;
   color: #fff;
 }
+
+.container {
+  @apply px-5;
+}
+
+.page-title {
+  @apply flex items-center text-xs uppercase text-water tracking-wide gap-2;
+}
