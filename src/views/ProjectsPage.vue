@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container pb-[121px] mb-[52px]">
     <div class="page-title mb-[21px]">
       <branch-icon />
       <h1>
