@@ -1,5 +1,5 @@
 <template>
-  <div class="background-graphs" :style="setScreenSizes" ref="homeSection">
+  <div class="background-graphs" ref="homeSection">
     <div class="container flex h-4/5 items-center">
       <div class="grid-cols-2">
         <div class="page-title">

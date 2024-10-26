@@ -1,13 +1,17 @@
 <template>
-  <div class="container">
-    <div class="page-title">
-      <branch-icon />
-      <h1>
-        Habilidades técnicas
-      </h1>
-    </div>
-    <div>
-      <abilities-card v-for="(item, index) in abilitiesArray" :key="index" :item-data="item" />
+  <div class="container py-14">
+    <div class="flex flex-row-reverse">
+      <div class="abilities-size">
+        <div class="page-title">
+          <branch-icon />
+          <h1>
+            Habilidades técnicas
+          </h1>
+        </div>
+        <div class="flex flex-row flex-wrap">
+          <abilities-card v-for="(item, index) in abilitiesArray" :key="index" :item-data="item" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -76,3 +80,14 @@ export default {
   }
 }
 </script>
+<style>
+.abilities-size {
+  @apply max-w-[70%];
+
+}
+@media only screen and (max-width: 537px) {
+  .abilities-size {
+    @apply max-w-full;
+  }
+  }
+</style>
