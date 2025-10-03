@@ -1,6 +1,6 @@
 <template>
-  <nav class="container">
-    <md-logo ></md-logo>
+  <header class="container">
+    <md-logo alt="Logo Marcos Domingues"/>
     <div class="items">
       <span class="home-style item">
         <p class="item" @click="RedirectTo('homeSection')">
@@ -18,7 +18,7 @@
       </p>
       <translate-icon></translate-icon>
     </div>
-  </nav>
+  </header>
 </template>
 <script>
 import TranslateIcon from "@/icons/TranslateIcon.vue";
@@ -39,7 +39,7 @@ export default {
 };
 </script>
 <style scoped postcss>
-nav {
+header {
   @apply flex justify-between h-[93px] items-center;
 }
 

@@ -34,6 +34,6 @@ export default {
 <style scoped postcss>
 .background-graphs {
   background-image: url("../../public/images/background-hero.svg");
-  @apply bg-no-repeat h-[850px] bg-right-top mb-7;
+  @apply bg-no-repeat h-[calc(100vh-63px)] bg-right-top mb-7 bg-cover;
 }
 </style>
