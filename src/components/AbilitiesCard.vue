@@ -1,5 +1,5 @@
 <template>
-  <div class="border-[1px] border-[#272A33] w-[120px] h-[103px] p-4 rounded m-6">
+  <div class="border-[1px] border-[#272A33] bg-[#13161F] w-[120px] h-[103px] p-4 rounded m-6">
     <div class="w-[34px] h-[34px] bg-[#272A33] rounded-full pl-2 pt-2">
       <component :is="itemData.icon"/>
     </div>

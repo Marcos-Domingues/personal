@@ -1,13 +1,14 @@
 <template>
-  <div class="container pb-[121px] mb-[52px]">
-    <div class="page-title mb-[21px]">
+  <div class="container pb-[121px] mb-[52px] relative">
+    <div class="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent via-white/10 backdrop-blur-md index-1"></div>
+    <div class="page-title mb-[21px] index-100 absolute top-0">
       <branch-icon />
       <h1>
         Projetos
       </h1>
     </div>
 
-    <div class="flex gap-6">
+    <div class="flex gap-6 index-100 absolute top-0">
       <project-card :example-image="projectsObject[0].exampleImage" :project-data="projectsObject[0]" :first-card="true"/>
       <div class="flex gap-6 flex-col">
         <project-card v-for="(project, index) in projectsArray" :key="index" :project-data="project"/>
